@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(192, 192, 192);
+    /* background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/weather-forecast-geometric-background-nessikk.jpg");
+    background-size: 100%;
+    background */
+}
+
+#title {
+    color: white;
+}
+
+#cardDeck {
+    padding: 1%;
+    margin: 1%;
+}
