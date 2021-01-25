@@ -5,6 +5,10 @@ body {
     background */
 }
 
+.hide {
+    display: none;
+}
+
 #title {
     color: white;
 }
@@ -12,4 +16,29 @@ body {
 #cardDeck {
     padding: 1%;
     margin: 1%;
+}
+
+ul {
+    padding-left: 1%;
+    padding-top: 1%;
+    margin: 1%;
+}
+
+#changPic {
+    padding: 1%;
+}
+
+.card-body {
+    padding: 2%;
+    margin: 1%;
+    text-align: center;
+}
+
+#cityChoice {
+    color: rgb(15, 247, 255);
+}
+
+#changePic {
+    height: 15%;
+    width: 15%;
 }

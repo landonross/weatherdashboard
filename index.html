@@ -17,88 +17,137 @@
 
   <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" id="title">Weather Dashboard</a>
+    <a id="cityChoice"></a>
     <form class="form-inline">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-term">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchBtn">Search</button>
     </form>
   </nav>
-  
-  <div class="card-deck" id="cardDeck">
-  <div class="card" style="width: 18rem;">
-    <img src="" class="card-img-top" alt="cold" id="changePic">
-    <div class="card-body">
-      <h5 class="card-title">Today</h5>
-      <p class="date"></p>
-    </div>
-    <ul class="text">
-      <li class="city"></li>
-      <li class="temp"></li>
-      <li class="UV"></li>
-    </ul>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="" class="card-img-top" alt="cold" id="changePic">
-    <div class="card-body">
-      <h5 class="card-title">Today</h5>
-      <p class="date"></p>
-    </div>
-    <ul class="text">
-      <li class="city"></li>
-      <li class="temp"></li>
-      <li class="UV"></li>
-    </ul>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="" class="card-img-top" alt="cold" id="changePic">
-    <div class="card-body">
-      <h5 class="card-title">Today</h5>
-      <p class="date"></p>
-    </div>
-    <ul class="text">
-      <li class="city"></li>
-      <li class="temp"></li>
-      <li class="UV"></li>
-    </ul>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="" class="card-img-top" alt="cold" id="changePic">
-    <div class="card-body">
-      <h5 class="card-title">Today</h5>
-      <p class="date"></p>
-    </div>
-    <ul class="text">
-      <li class="city"></li>
-      <li class="temp"></li>
-      <li class="UV"></li>
-    </ul>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="" class="card-img-top" alt="cold" id="changePic">
-    <div class="card-body">
-      <h5 class="card-title">Today</h5>
-      <p class="date"></p>
-    </div>
-    <ul class="text">
-      <li class="city"></li>
-      <li class="temp"></li>
-      <li class="UV"></li>
-    </ul>
-  </div>
-</div>
 
-<!-- 
-  <div class="city"></div>
-  <div class="temp"></div>
-  <div class="date"></div> -->
+  <div class="jumbotron jumbotron-fluid" id="instructions">
+    <div class="container">
+      <h1 class="display-4">Instructions</h1>
+      <ul class="rules">1. Type the name of the city into the upper right search box that you would like to view.</ul>
+      <ul class="rules">2. If you would like to view a previous result, click on its respective button below.</ul>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid" id="previousChoices">
+    <div class="container">
+      <h1 class="display-4">Previous Selections</h1>
+      <div id="newCityButtons" class="mb-4">
+      </div>
+    </div>
+  </div>
 
+  <div id="weatherPage">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title" id="date"></h5>
+        <img src="" class="card-img-top" id="changePic">
+        <p class="card-text"></p>
+        <ul class="text">
+          <ul class="city"></ul>
+          <ul class="temp"></ul>
+          <ul class="UV"></ul>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-deck" id="cardDeck">
+      <div class="card" style="width: 18rem;">
+        <img src="" class="card-img-top" id="changePic1">
+        <div class="card-body">
+          <h5 class="card-title" id="date1"></h5>
+          <p class="date"></p>
+        </div>
+        <ul class="text">
+          <ul class="city"></ul>
+          <ul class="temp1"></ul>
+          <ul class="UV"></ul>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="" class="card-img-top" id="changePic2">
+        <div class="card-body">
+          <h5 class="card-title" id="date2"></h5>
+          <p class="date"></p>
+        </div>
+        <ul class="text">
+          <ul class="city"></ul>
+          <ul class="temp2"></ul>
+          <ul class="UV"></ul>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="" class="card-img-top" id="changePic3">
+        <div class="card-body">
+          <h5 class="card-title" id="date3"></h5>
+          <p class="date"></p>
+        </div>
+        <ul class="text">
+          <ul class="city"></ul>
+          <ul class="temp3"></ul>
+          <ul class="UV"></ul>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="" class="card-img-top" id="changePic4">
+        <div class="card-body">
+          <h5 class="card-title" id="date4"></h5>
+          <p class="date"></p>
+        </div>
+        <ul class="text">
+          <ul class="city"></ul>
+          <ul class="temp4"></ul>
+          <ul class="UV"></ul>
+        </ul>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="" class="card-img-top" id="changePic5">
+        <div class="card-body">
+          <h5 class="card-title" id="date5"></h5>
+          <p class="date"></p>
+        </div>
+        <ul class="text">
+          <ul class="city"></ul>
+          <ul class="temp5"></ul>
+          <ul class="UV"></ul>
+        </ul>
+      </div>
+    </div>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="style.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+<!-- 
+GIVEN a weather dashboard with form inputs
+WHEN I search for a city
+THEN I am presented with current and future conditions for that city and that city is added to the search history
+WHEN I view current weather conditions for that city
+THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+WHEN I view the UV index
+THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+WHEN I view future weather conditions for that city
+THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
+WHEN I click on a city in the search history
+THEN I am again presented with current and future conditions for that city
+WHEN I open the weather dashboard
+THEN I am presented with the last searched city forecast -->
