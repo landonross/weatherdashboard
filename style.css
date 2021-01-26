@@ -9,6 +9,21 @@ body {
     display: none;
 }
 
+.ModLow {
+    background-color: green;
+    color: white;
+}
+
+.HighVH {
+    background-color: yellow;
+    color: black;
+}
+
+.extreme {
+    background-color: red;
+    color: white;
+}
+
 #title {
     color: white;
 }
@@ -37,8 +52,15 @@ ul {
 #cityChoice {
     color: rgb(15, 247, 255);
 }
+.city-btn {
+    padding:5px;
+    background-color: #140086;
+    border: 1px solid #666;
+    color:rgb(255, 255, 255);
+    border-radius: 6px;
+}
 
 #changePic {
-    height: 15%;
-    width: 15%;
+    height: 10%;
+    width: 10%;
 }

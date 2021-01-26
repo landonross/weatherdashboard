@@ -31,25 +31,18 @@
       <ul class="rules">2. If you would like to view a previous result, click on its respective button below.</ul>
     </div>
   </div>
-  <div class="jumbotron jumbotron-fluid" id="previousChoices">
-    <div class="container">
-      <h1 class="display-4">Previous Selections</h1>
-      <div id="newCityButtons" class="mb-4">
-      </div>
-    </div>
-  </div>
 
+  <!-- the humidity, the wind speed, and the UV index -->
   <div id="weatherPage">
     <div class="card">
-      <div class="card-body">
+      <div class="card-body" id="currentWeather">
         <h5 class="card-title" id="date"></h5>
         <img src="" class="card-img-top" id="changePic">
         <p class="card-text"></p>
-        <ul class="text">
-          <ul class="city"></ul>
-          <ul class="temp"></ul>
-          <ul class="UV"></ul>
-        </ul>
+          <ul class="temp"> </ul>
+          <ul class="humidity"></ul>
+          <ul class="windSpeed"></ul>
+          <ul class="UVIndex"></ul>
       </div>
     </div>
 
@@ -61,9 +54,8 @@
           <p class="date"></p>
         </div>
         <ul class="text">
-          <ul class="city"></ul>
           <ul class="temp1"></ul>
-          <ul class="UV"></ul>
+          <ul class="humidity1"></ul>
         </ul>
       </div>
       <div class="card" style="width: 18rem;">
@@ -73,9 +65,8 @@
           <p class="date"></p>
         </div>
         <ul class="text">
-          <ul class="city"></ul>
           <ul class="temp2"></ul>
-          <ul class="UV"></ul>
+          <ul class="humidity2"></ul>
         </ul>
       </div>
       <div class="card" style="width: 18rem;">
@@ -85,9 +76,8 @@
           <p class="date"></p>
         </div>
         <ul class="text">
-          <ul class="city"></ul>
           <ul class="temp3"></ul>
-          <ul class="UV"></ul>
+          <ul class="humidity3"></ul>
         </ul>
       </div>
       <div class="card" style="width: 18rem;">
@@ -97,9 +87,8 @@
           <p class="date"></p>
         </div>
         <ul class="text">
-          <ul class="city"></ul>
           <ul class="temp4"></ul>
-          <ul class="UV"></ul>
+          <ul class="humidity4"></ul>
         </ul>
       </div>
       <div class="card" style="width: 18rem;">
@@ -109,10 +98,19 @@
           <p class="date"></p>
         </div>
         <ul class="text">
-          <ul class="city"></ul>
           <ul class="temp5"></ul>
-          <ul class="UV"></ul>
+          <ul class="humidity5"></ul>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid" id="previousChoices">
+    <div class="container">
+      <h1 class="display-4">Previous Selections</h1>
+      <div id="newCityButtons" class="mb-4">
+        <!--I'm still working out/trying to get buttons to work from previous results-->
+        <!-- <img src= "https://media.giphy.com/media/3ohjUTW7SUc0YlUkDK/giphy.gif"> -->
       </div>
     </div>
   </div>
